@@ -7,7 +7,7 @@ export default function CarPage() {
 
   function getTodaysTurn() {
     const today = getMalaysiaDate()
-    const startDate = new Date('2025-01-01T00:00:00+08:00')
+    const startDate = new Date('2026-04-30T00:00:00+08:00')
     const daysSinceStart = Math.floor((today - startDate) / (1000 * 60 * 60 * 24))
     return ['Hayfa Izara', 'Hafiya Inara', 'Hail Idlan'][daysSinceStart % 3]
   }

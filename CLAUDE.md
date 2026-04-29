@@ -37,7 +37,7 @@ main.jsx
 - Turn calculation: days since 2025-01-01 (`Asia/Kuala_Lumpur`) mod 2. Day 0 = Hayfa Izara, Day 1 = Hafiya Inara.
 
 **Page logic — `src/pages/CarPage.jsx`:**
-- Turn calculation: days since 2025-01-01 (`Asia/Kuala_Lumpur`) mod 3. Day 0 = Hayfa Izara, Day 1 = Hafiya Inara, Day 2 = Hail Idlan.
+- Turn calculation: days since 2026-04-30 (`Asia/Kuala_Lumpur`) mod 3. Day 0 = Hayfa Izara, Day 1 = Hafiya Inara, Day 2 = Hail Idlan.
 - Cool blue/slate gradient: `sky-100 → blue-200 → slate-300` (light), `slate-950 → blue-950 → sky-900` (dark).
 
 **Shared helpers in `src/lib/utils.js`:**
