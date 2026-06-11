@@ -1,23 +1,29 @@
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="aurora-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#e9d5ff;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#fbcfe8;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#cffafe;stop-opacity:1" />
+    <linearGradient id="sunny-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE9A8"/>
+      <stop offset="100%" stop-color="#FFD3DE"/>
     </linearGradient>
   </defs>
 
-  <!-- Background with Aurora gradient -->
-  <rect width="512" height="512" rx="128" fill="url(#aurora-gradient)"/>
+  <!-- Warm candy background -->
+  <rect width="512" height="512" rx="120" fill="url(#sunny-bg)"/>
 
-  <!-- Letter "T" for Turn -->
-  <text
-    x="256"
-    y="350"
-    font-family="Roboto, Arial, sans-serif"
-    font-size="280"
-    font-weight="300"
-    fill="#164e63"
-    text-anchor="middle"
-  >T</text>
+  <!-- Taking-turns arrows: coral over the top, teal under the bottom -->
+  <path d="M 119 177 A 158 158 0 0 1 393 177" stroke="#FF6B81" stroke-width="50" stroke-linecap="round"/>
+  <path d="M 0 -34 L 52 0 L 0 34 Z" fill="#FF6B81" transform="translate(393 177) rotate(60)"/>
+  <path d="M 393 335 A 158 158 0 0 1 119 335" stroke="#2DD4BF" stroke-width="50" stroke-linecap="round"/>
+  <path d="M 0 -34 L 52 0 L 0 34 Z" fill="#2DD4BF" transform="translate(119 335) rotate(240)"/>
+
+  <!-- Smiley sun in the middle -->
+  <circle cx="256" cy="256" r="86" fill="#FFC83D"/>
+  <circle cx="226" cy="242" r="11" fill="#4A3200"/>
+  <circle cx="286" cy="242" r="11" fill="#4A3200"/>
+  <path d="M 222 278 Q 256 308 290 278" stroke="#4A3200" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="200" cy="268" r="11" fill="#FF9AA8" opacity="0.85"/>
+  <circle cx="312" cy="268" r="11" fill="#FF9AA8" opacity="0.85"/>
+
+  <!-- Sparkles -->
+  <path d="M 104 76 L 112 96 L 132 104 L 112 112 L 104 132 L 96 112 L 76 104 L 96 96 Z" fill="#FFFFFF" opacity="0.9"/>
+  <path d="M 412 384 L 419 401 L 436 408 L 419 415 L 412 432 L 405 415 L 388 408 L 405 401 Z" fill="#FFFFFF" opacity="0.9"/>
 </svg>

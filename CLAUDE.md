@@ -33,12 +33,10 @@ main.jsx
 
 **Navigation** is state-based (no router). `App.jsx` holds a `page` state (`'home'` | `'car'`) and renders a top-center frosted pill with a Home icon and a Car icon (Lucide). The active icon is highlighted.
 
-**Page logic — `src/pages/HomePage.jsx`:**
-- Turn calculation: days since 2025-01-01 (`Asia/Kuala_Lumpur`) mod 2. Day 0 = Hayfa Izara, Day 1 = Hafiya Inara.
+**Page logic:** Both pages are thin wrappers around the shared `src/components/turn-page.jsx` (`TurnPage`), which renders the playful "sticker card" UI: per-kid color theme (`KID_THEMES`), floating blobs, twinkles, staggered pop-in entrance animations, and a tap-to-confetti card. Keyframes live in `src/index.css`. Fonts: Fredoka (display, via `font-display`) + Quicksand (body).
 
-**Page logic — `src/pages/CarPage.jsx`:**
-- Turn calculation: days since 2026-04-30 (`Asia/Kuala_Lumpur`) mod 3. Day 0 = Hayfa Izara, Day 1 = Hafiya Inara, Day 2 = Hail Idlan.
-- Cool blue/slate gradient: `sky-100 → blue-200 → slate-300` (light), `slate-950 → blue-950 → sky-900` (dark).
+- `src/pages/HomePage.jsx`: days since 2025-01-01 (`Asia/Kuala_Lumpur`) mod 2. Day 0 = Hayfa Izara, Day 1 = Hafiya Inara. Warm cream background.
+- `src/pages/CarPage.jsx`: days since 2026-04-30 (`Asia/Kuala_Lumpur`) mod 3. Day 0 = Hayfa Izara, Day 1 = Hafiya Inara, Day 2 = Hail Idlan. Cool sky background.
 
 **Shared helpers in `src/lib/utils.js`:**
 - `getMalaysiaDate()` — returns current date object in `Asia/Kuala_Lumpur` timezone; used by both pages.

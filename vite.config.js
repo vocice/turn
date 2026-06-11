@@ -13,8 +13,8 @@ export default defineConfig({
         name: 'Turn',
         short_name: 'Turn',
         description: 'Track whose turn it is today between Hayfa Izara and Hafiya Inara',
-        theme_color: '#e9d5ff',
-        background_color: '#ffffff',
+        theme_color: '#fff6e9',
+        background_color: '#fff6e9',
         display: 'standalone',
         icons: [
           {
